@@ -1,0 +1,49 @@
+---
+title: "20523186-20523200"
+author: "Bintang"
+date: "12/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(Ryacas)
+```
+
+$$
+\lim_{x \to 2} (8-3x+12x^2) 
+$$
+
+```{r}
+#no.2.a
+yac_str("Limit (x, 2) (8-3*x+12*x^2)")
+```
+$$
+\lim_{x \to infinity} \frac{x^2+5x=10}{3x^2-6x-2}
+$$
+
+```{r}
+#no.2.b
+yac_str("Limit (x, Infinity) (x^2+5*x+10)/(3*x^2-6*x-2)")
+```
+$$
+\lim_{h \to 0} \frac{(6+h)^2-36}{h}
+$$
+
+
+```{r}
+#no.2.c
+yac_str("Limit (h, 0)((6+h)^2-36)/(h)")
+
+```
+$$
+\lim_{x \to 0} \frac{x}{3-\sqrt{x+9}}
+$$
+
+
+```{r}
+#no.2.d
+yac_str("Limit (x, 0) (x)/(3- sqrt(x+9))")
+```
