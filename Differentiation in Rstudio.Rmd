@@ -1,0 +1,59 @@
+---
+title: "Derivative"
+author: "Bintang"
+date: "28/5/2021"
+output: html_document
+---
+
+
+exercise 1 no.1,2,3 using D
+```{r}
+D(expression(2*x^5),'x')
+
+D(expression(x^2+4),'x')
+
+D(expression(x^5 - 6*x^7),'x')
+```
+
+exercise 2
+```{r}
+D(expression((x^6-2)*sin(x)-4),'x')
+
+D(expression((sin(x)-4)*x^6-2),'x')
+
+D(expression((x^6-2)/sin(x)-4),'x')
+
+D(expression((sin(x)-4)/x^6-2),'x')
+
+D(expression(((sin(x)-4)^6)-2),'x')
+
+D(expression(sin(x^6-2)-4),'x')
+```
+
+exercise 3 no.1
+```{r}
+library(Ryacas)
+yac_expr("D(x) 2*x^5")
+
+yac_expr("D(x) x^2+4")
+
+yac_expr("D(X) x^5-6*x^7")
+```
+
+exercise 3 no.2 using ryacas
+```{r}
+library(Ryacas)
+
+yac_expr("D(x) (x^6-2)*sin(x)-4")
+
+yac_expr("D(x) (sin(x)-4)*x^6-2")
+
+yac_expr("D(x) (x^6-2)/sin(x)-4")
+
+yac_expr("D(x) (sin(x)-4)/x^6-2")
+
+yac_expr("D(x) ((sin(x)-4)^6)-2")
+
+yac_expr("D(x) sin(x^6-2)-4")
+```
+
